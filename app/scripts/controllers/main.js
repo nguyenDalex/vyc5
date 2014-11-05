@@ -2,16 +2,14 @@
 
 /**
  * @ngdoc function
- * @name vyc5App.controller:MainCtrl
+ * @name vyc5AngularApp.controller:MainCtrl
  * @description
  * # MainCtrl
- * Controller of the vyc5App
+ * Controller of the vyc5AngularApp
  */
-angular.module('vyc5App')
+angular.module('vyc5AngularApp')
   .controller('MainCtrl', function ($scope) {
     $scope.awesomeThings = [
-      'HTML5 Boilerplate',
       'AngularJS',
-      'Karma'
     ];
   });
