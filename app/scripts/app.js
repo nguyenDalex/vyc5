@@ -15,9 +15,10 @@ angular
     'ngResource',
     'ngRoute',
     'ngSanitize',
-    'ngTouch'
+    'ngTouch',
+    'facebook'
   ])
-  .config(function ($routeProvider, $locationProvider) {
+  .config(function ($routeProvider, $locationProvider, FacebookProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
@@ -28,4 +29,5 @@ angular
       });
       // use the HTML5 History API
     $locationProvider.html5Mode(true);
+    FacebookProvider.init('785523044838748');
   });
