@@ -228,7 +228,12 @@ blockquote:hover {
 .hero {
 	border-left-color: #e74c3c;
 }
-
+blockquote.hero {
+	a {
+		color: #fff;
+		text-decoration: underline;
+	}
+}
 /*Carousel
 ------------------------------------*/
 .carousel-arrow a.carousel-control:hover {
@@ -397,7 +402,6 @@ blockquote:hover {
 .pricing-footer a,
 .pricing-footer button {
 	background:#e74c3c;
-	text-shadow:0 1px 0 #c0392b;
 }
 .pricing-footer a:hover,
 .pricing-footer button:hover {
