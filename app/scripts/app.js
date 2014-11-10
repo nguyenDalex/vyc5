@@ -28,6 +28,22 @@ angular
         templateUrl: 'views/registration.html',
         controller: 'RegistrationCtrl'
       })
+      .when('/travel', {
+        templateUrl: 'views/travel.html',
+        controller: 'TravelCtrl'
+      })
+      .when('/guidelines', {
+        templateUrl: 'views/guidelines.html',
+        controller: 'GuidelinesCtrl'
+      })
+      .when('/experience', {
+        templateUrl: 'views/experience.html',
+        controller: 'ExperienceCtrl'
+      })
+      .when('/sponsor', {
+        templateUrl: 'views/sponsor.html',
+        controller: 'SponsorCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });

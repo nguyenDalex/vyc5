@@ -10,6 +10,8 @@
 		<!-- bower:css -->
 		<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
 		<link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.css" />
+		<link rel="stylesheet" href="bower_components/simple-line-icons/css/simple-line-icons.css" />
+		<link rel="stylesheet" href="bower_components/Hover/css/hover.css" />
 		<!-- endbower -->
 		<!-- endbuild -->
 		<!-- build:css(.tmp) styles/main.css -->
@@ -35,18 +37,12 @@
 								<li>
 									<i class="fa fa-envelope"></i> Email: <a href="mailto:contact@vyc5.org">contact@vyc5.org</a>
 								</li>
-								<li>
-									<i class="fa fa-phone"></i> 4251231234
-								</li>
 							</ul>
 						</div>
 						<div class="col-md-6">
 							<ul class="list-unstyled top-v1-data">
-								<li><a href="#"><i class="fa fa-home"></i></a></li>
-								<li><a href="#"><i class="fa fa-globe"></i></a></li>
-								<li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-								<li><a href="#"> FAQ's</a></li>
-								<li><a href="#"> Staff Access Point</a></li>
+								<li><a href="/"><i class="fa fa-home"></i></a></li>
+								<li><a href="http://staff.vyc5.org"> Staff Access Point</a></li>
 							</ul>
 						</div>
 					</div>
@@ -56,7 +52,7 @@
 			
 			<!-- Navbar -->
 			<div class="navbar navbar-default" role="navigation">
-				<div class="container">
+				<div class="container" ng-style="{'background-image':'url(/images/main/web_background_2.jpg)','background-repeat':'no-repeat'}">
 					<!-- Brand and toggle get grouped for better mobile display -->
 					<div class="navbar-header">
 						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
@@ -93,7 +89,7 @@
 									The Experience
 								</a>
 							</li>
-							<li class="dropdown">
+<!-- 							<li class="dropdown">
 								<a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
 									VYC5
 								</a>
@@ -102,7 +98,7 @@
 									<li><a href="/#/press">Press</a></li>
 									<li><a href="/#/volunteer">Volunteer</a></li>
 								</ul>
-							</li>
+							</li> -->
 							<li>
 								<a href="/#/sponsor">
 									Become a Sponsor
@@ -133,7 +129,9 @@
 			<div ng-view=""></div>
 
 			<div class="footer">
-				<p>VYC 5</p>
+				<div class="col-md-12">
+					VYC5 - Vietnamese Youth Convention © Copyright All Rights Reserved. 2014
+				</div>
 			</div>
 		</div>
 
@@ -175,6 +173,10 @@
 				<script src="scripts/app.js"></script>
 				<script src="scripts/controllers/main.js"></script>
 				<script src="scripts/controllers/registration.js"></script>
+<script src="scripts/controllers/travel.js"></script>
+<script src="scripts/controllers/guidelines.js"></script>
+<script src="scripts/controllers/experience.js"></script>
+<script src="scripts/controllers/sponsor.js"></script>
 				<!-- endbuild -->
 </body>
 </html>
