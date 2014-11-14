@@ -12,7 +12,6 @@
     "angular-animate": "~1.2.0",
     "angular-touch": "~1.2.0",
     "angular-route": "~1.2.0",
-    "angular-facebook": "~0.2.3",
     "fontawesome": "~4.2.0",
     "simple-line-icons": "~0.0.1",
     "Hover": "~1.0.9"

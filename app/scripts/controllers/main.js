@@ -10,6 +10,6 @@
 angular.module('vyc5AngularApp')
   .controller('MainCtrl', function ($scope) {
     $scope.awesomeThings = [
-      'AngularJS',
+      'AngularJS'
     ];
   });
