@@ -19,6 +19,7 @@
 		<link rel="stylesheet" href="styles/app.css">
 		<link rel="stylesheet" href="styles/color.css">
 		<link rel="stylesheet" href="styles/home.css">
+		<link rel="stylesheet" href="styles/team.css">
 		<!-- endbuild -->
 	</head>
 	<body ng-app="vyc5AngularApp">
@@ -51,8 +52,8 @@
 			<!-- End Topbar -->
 			
 			<!-- Navbar -->
-			<div class="navbar navbar-default" role="navigation">
-				<div class="container" ng-style="{'background-image':'url(/images/main/web_background_2.jpg)','background-repeat':'no-repeat'}">
+			<div class="navbar navbar-default" role="navigation" ng-style="{'background-image':'url(/images/main/web_background_2.jpg)','background-repeat':'no-repeat', 'background-size':'auto 150px'}">
+				<div class="container" ng-style="{height:'150px'}">
 					<!-- Brand and toggle get grouped for better mobile display -->
 					<div class="navbar-header">
 						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
@@ -89,16 +90,16 @@
 									The Experience
 								</a>
 							</li>
-<!-- 							<li class="dropdown">
+							<li class="dropdown">
 								<a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
 									VYC5
 								</a>
 								<ul class="dropdown-menu">
 									<li><a href="/#/team">Team</a></li>
-									<li><a href="/#/press">Press</a></li>
-									<li><a href="/#/volunteer">Volunteer</a></li>
+<!-- 									<li><a href="/#/press">Press</a></li>
+									<li><a href="/#/volunteer">Volunteer</a></li> -->
 								</ul>
-							</li> -->
+							</li>
 							<li>
 								<a href="/#/sponsor">
 									Become a Sponsor
@@ -176,6 +177,8 @@
 <script src="scripts/controllers/guidelines.js"></script>
 <script src="scripts/controllers/experience.js"></script>
 <script src="scripts/controllers/sponsor.js"></script>
+<script src="scripts/services/blogposts.js"></script>
+<script src="scripts/controllers/team.js"></script>
 				<!-- endbuild -->
 </body>
 </html>
