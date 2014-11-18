@@ -15,10 +15,9 @@ angular
     'ngResource',
     'ngRoute',
     'ngSanitize',
-    'ngTouch',
-    'facebook'
+    'ngTouch'
   ])
-  .config(function ($routeProvider, $locationProvider, FacebookProvider) {
+  .config(function ($routeProvider, $locationProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
@@ -28,10 +27,29 @@ angular
         templateUrl: 'views/registration.html',
         controller: 'RegistrationCtrl'
       })
+      .when('/travel', {
+        templateUrl: 'views/travel.html',
+        controller: 'TravelCtrl'
+      })
+      .when('/guidelines', {
+        templateUrl: 'views/guidelines.html',
+        controller: 'GuidelinesCtrl'
+      })
+      .when('/experience', {
+        templateUrl: 'views/experience.html',
+        controller: 'ExperienceCtrl'
+      })
+      .when('/sponsor', {
+        templateUrl: 'views/sponsor.html',
+        controller: 'SponsorCtrl'
+      })
+      .when('/team', {
+        templateUrl: 'views/team.html',
+        controller: 'TeamCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
       // use the HTML5 History API
     $locationProvider.html5Mode(false);
-    FacebookProvider.init('785523044838748');
   });
