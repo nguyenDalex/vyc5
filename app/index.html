@@ -13,6 +13,7 @@
 		<link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.css" />
 		<link rel="stylesheet" href="bower_components/simple-line-icons/css/simple-line-icons.css" />
 		<link rel="stylesheet" href="bower_components/Hover/css/hover.css" />
+		<link rel="stylesheet" href="bower_components/animate.css/animate.css" />
 		<!-- endbower -->
 		<!-- endbuild -->
 		<!-- build:css(.tmp) styles/main.css -->
@@ -114,10 +115,19 @@
 								<i class="search fa fa-search search-btn"></i>
 								<div class="search-open">
 									<div class="input-group animated fadeInDown">
-										<input type="text" class="form-control" placeholder="Search">
-										<span class="input-group-btn">
-										<button class="btn-u" type="button">Go</button>
-										</span>
+										<script>
+										  (function() {
+										    var cx = '010056326177576417250:n9w7vligmtk';
+										    var gcse = document.createElement('script');
+										    gcse.type = 'text/javascript';
+										    gcse.async = true;
+										    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+										        '//www.google.com/cse/cse.js?cx=' + cx;
+										    var s = document.getElementsByTagName('script')[0];
+										    s.parentNode.insertBefore(gcse, s);
+										  })();
+										</script>
+										<gcse:search></gcse:search>
 									</div>
 								</div>
 							</li>
