@@ -1,6 +1,3 @@
-/*Import Google Font*/
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400);
-
 /*Reset Styles
 ------------------------------------*/
 * {
@@ -11,6 +8,7 @@ body {
    color: #333; 
    font-size: 13px;
    line-height: 1.6;
+   font-family: 'Open Sans', sans-serif;
 }
 
 p, 
