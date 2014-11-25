@@ -42,24 +42,17 @@
 		<!-- Begin Sidebar -->
 		<div class="col-md-3">
 			<!-- home Posts -->
-<!-- 			<div class="row">
-				<div class="home-posts col-md-12 col-sm-6 margin-bottom-30">
-					<h3><a href="#">News Posts</a></h3>
-					<span><i class="color-green">By Dat Tran</i> / March 19, 2014</span>
+			<div class="row">
+				<div class="home-posts col-md-12 col-sm-6 margin-bottom-30" ng-repeat="posts in recentPosts.posts">
+					<h3><a href="#">{{posts.title}}</a></h3>
+					<span><i class="color-green"></i>{{posts.date}}</span>
 					<div class="home-posts-img">
-						<a href="#"><img class="img-responsive" src="images/main/10.jpg" alt=""></a>
-						<span class="home-badge home-badge-red">Unify</span>
+						<a href="#"><img class="img-responsive" src="{{posts.acf.featured_image.sizes.medium}}" alt=""></a>
+						<span class="home-badge home-badge-red">posts</span>
 					</div>
+
 				</div>
-				<div class="home-posts col-md-12 col-sm-6 margin-bottom-30">
-					<h3><a href="#">Another News posts </a></h3>
-					<span><i class="color-green">By Quan Paul Trieu</i> / July 19, 2014</span>
-					<div class="home-posts-img">
-						<a href="#"><img class="img-responsive" src="images/main/1.jpg" alt=""></a>
-						<span class="home-badge home-badge-green">Bootstrap 3</span>
-					</div>
-				</div>
-			</div> -->
+			</div>
 			<!-- End home Posts -->
 			<!-- Photo Stream -->
 			<!-- <div class="headline"><h2>Quick links</h2></div> -->

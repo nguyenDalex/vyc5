@@ -1,0 +1,36 @@
+{
+  "staff": [
+    {
+      "name": "Bền Ngọc Nguyễn",
+      "title": "Food Lead"
+    },
+    {
+    	"name": "Cần Eric Trần",
+    	"title": "Program Logistics Lead"
+    },
+    {
+    	"name": "Tiên John Lưu",
+    	"title": "VP of Operations"
+    },
+    {
+    	"name":"Sơn Trần",
+    	"title":"Content Lead"
+    },
+    {
+    	"name": "Sr. Mary Thúy-Mai Trần",
+    	"title":"Liturgy Lead"
+    },
+    {
+    	"name":"Angela Linh-Uyên Vũ",
+    	"title":"Registration Lead"
+    },
+    {
+    	"name":"N/a",
+    	"title":"Technical Lead"
+    },
+    {
+    	"name":"Huyền Phượng Trinh",
+    	"title":"Environmental Lead"
+    }
+  ]
+}
