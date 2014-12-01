@@ -1,8 +1,47 @@
 /* 
 * Version: 1.4
-* Blue Color 		: #e74c3c;
-* Blue Hover Color  : #c0392b;
+* 
 */
+
+.text_red {
+	color: #E74C3C !important;
+}
+
+.text_orange {
+	color: #E27A3F !important;
+}
+.text_yellow {
+	color: #FFCD50 !important;
+}
+.text_green {
+	color: #39C9AD !important;
+}
+
+.text_grey {
+	color: #444444 !important;
+}
+
+.text_white {
+	color: #ffffff !important;
+}
+
+.background_red {
+	background-color: #E74C3C !important;
+}
+
+.background_orange {
+	background-color: #E27A3F !important;
+}
+.background_yellow {
+	background-color: #FFCD50 !important;
+}
+.background_green {
+	background-color: #39C9AD !important;
+}
+
+.background_grey {
+	background-color: #444444 !important;
+}
 
 a {
    color: #e74c3c;
@@ -24,6 +63,15 @@ a.read-more:hover {
 
 .linked:hover {
 	color:#e74c3c;
+}
+
+.color_scheme {
+	padding: 10px;
+	border: 4px white solid;
+	span {
+		display: block;
+		margin-top: 40px;
+	}
 }
 
 /*Header v1

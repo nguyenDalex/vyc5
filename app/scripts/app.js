@@ -47,6 +47,14 @@ angular
         templateUrl: 'views/team.html',
         controller: 'TeamCtrl'
       })
+      .when('/press', {
+        templateUrl: 'views/press.html',
+        controller: 'PressCtrl'
+      })
+      .when('/viet', {
+        templateUrl: 'views/viet.html',
+        controller: 'VietCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
