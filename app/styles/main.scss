@@ -1,6 +1,21 @@
 // bower:scss
 // endbower
 @import 'pricing';
+@import 'slider';
+
+.travel_slider {
+  margin: auto 0px;
+  height: 600px;
+  .slider {
+    .slider {
+      text-align:center;
+    }
+  }
+  img {
+    margin: auto 0px;
+    max-width: 1080px;
+  }
+}
 
 .browsehappy {
   margin: 0.2em 0;
