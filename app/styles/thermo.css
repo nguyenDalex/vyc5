@@ -1,0 +1,226 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+#content {
+    width:700px;
+    height: 400px;
+    margin:30px auto;
+}
+.dataTable { clear: both; padding-top : 5em;}
+.thermometer {
+    float: left;
+    margin:0 0 2em 0;
+}
+.thermometer {
+    margin-top: 4em;
+    width:70px; /*width of the thermometer shape*/
+    height:300px;
+    position: relative;
+    background: #ddd;
+    border:1px solid #aaa;
+    -webkit-border-radius: 12px;
+       -moz-border-radius: 12px;
+        -ms-border-radius: 12px;
+         -o-border-radius: 12px;
+            border-radius: 12px;
+
+    -webkit-box-shadow: 1px 1px 4px #999, 5px 0 20px #999;
+       -moz-box-shadow: 1px 1px 4px #999, 5px 0 20px #999;
+        -ms-box-shadow: 1px 1px 4px #999, 5px 0 20px #999;
+         -o-box-shadow: 1px 1px 4px #999, 5px 0 20px #999;
+            box-shadow: 1px 1px 4px #999, 5px 0 20px #999;
+}
+
+.thermometer .track {
+    height:280px;
+    top:10px;
+    width:20px;
+    border: 1px solid #aaa;
+    position: relative;
+    margin:0 auto;
+    background: rgb(255,255,255);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgb(0,0,0)), color-stop(1%,rgb(255,255,255)));
+    background: -webkit-linear-gradient(top, rgb(0,0,0) 0%,rgb(255,255,255) 10%);
+    background:      -o-linear-gradient(top, rgb(0,0,0) 0%,rgb(255,255,255) 10%);
+    background:     -ms-linear-gradient(top, rgb(0,0,0) 0%,rgb(255,255,255) 10%);
+    background:    -moz-linear-gradient(top, rgb(0,0,0) 0%,rgb(255,255,255) 10%);
+    background:   linear-gradient(to bottom, rgb(0,0,0) 0%,rgb(255,255,255) 10%);
+    background-position: 0 -1px;
+    background-size: 100% 5%;
+}
+
+.thermometer .prog {
+    height:0%;
+    width:100%;
+    background: rgba(231,76,60,0.8); /* color of the thermometer progress bar with some transparent setting */
+    position: absolute;
+    bottom:0;
+    left:0;
+}
+
+/*Set styles for goals*/
+.thermometer .goal {
+    position:absolute;
+    top:0;
+    top: -65px; /*plays well with bottom border*/
+}
+
+.thermometer .subGoal, .thermometer .midGoal, .thermometer .minGoal
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.thermometer .amount {
+    display: inline-block;
+    padding:0 5px 0 60px;
+    border-top:0px solid black; /*plays well with top: 0;*/
+    /*border-bottom:1px solid #444444;*/
+    font-weight: bold;
+    color: #E74C3C; /* text color of goal amounts */
+
+    
+}
+
+.thermometer .goal .amount {
+   /* padding:0 60px 0 5px;
+    position: absolute; */
+    border-top: 0;
+   border-bottom:0px solid #444444;
+   color: #E74C3C; /* text color of progress amount */
+   /* right:0; */
+}
+
+.thermometer .prog .amount {
+   /* padding:0 60px 0 5px;
+    position: absolute; */
+   /* border-top:1px solid #060; */
+   border-top:0px solid #444444; /*plays well with top: 0;*/
+   /*border-bottom:1px solid #444444;*/
+   color: #39C9AD; /* text color of progress amount */
+   /* right:0; */
+}
+
+.thermometer.horizontal {
+    margin:100px auto;
+}
+
+.thermometer.horizontal {
+    width:350px;
+    height:70px;
+}
+
+.thermometer.horizontal .track {
+    width:90%;
+    left:0;
+    height:20px;
+    margin:14px auto;
+
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgb(0,0,0)), color-stop(1%,rgb(255,255,255)));
+    background: -webkit-linear-gradient(left, rgb(0,0,0) 0%,rgb(255,255,255) 10%);
+    background:      -o-linear-gradient(left, rgb(0,0,0) 0%,rgb(255,255,255) 10%);
+    background:     -ms-linear-gradient(left, rgb(0,0,0) 0%,rgb(255,255,255) 10%);
+    background:    -moz-linear-gradient(left, rgb(0,0,0) 0%,rgb(255,255,255) 10%);
+    background:   linear-gradient(to right, rgb(0,0,0) 0%,rgb(255,255,255) 10%);
+    background-size: 5% 100%;
+}
+
+.thermometer.horizontal .prog {
+    height:100%;
+    width:0%;
+}
+
+.thermometer.horizontal .goal {
+    left:100%;
+    height:100%;
+}
+
+.thermometer.horizontal .amount {
+    bottom:0;
+    position: absolute;
+    padding:0 5px 50px 5px;
+    border-top:0;
+    border-left:1px solid black;
+
+}
+
+.thermometer.horizontal .prog .amount {
+    border-left:0;
+    border-top:0;
+    border-right:1px solid #060;
+}
+
+
+/*slickgrid customized css*/
+.rightAlign { text-align: right}
+
+#right-triangle {
+   width: 0;
+   height: 0;
+   border-left: 100px solid blue;
+   border-top: 50px solid transparent;
+   border-bottom: 50px solid transparent;
+}
+#rectangle {
+   width: 140px; 
+   height: 80px;
+   background: blue;
+}
+
+.amount 
+{
+    font-weight: bold;
+    font-size: 16pt;
+}
+
+.amount span 
+{
+    font-size: 12pt; 
+    color: #444444;
+    white-space: nowrap;
+    font-weight: normal;
+}
+
+#thermoHeader
+{
+    font-size:34pt;
+    font-weight: bold;
+}
+
+#thermoHeader span
+{
+    color: rgb(57,201,173); /*green*/
+    font-size: 54pt;
+    font-weight: bolder;
+}
+
+#btnDonate {
+   background: rgb(57,201,173);
+   color: white;
+   font-size: 16pt;
+   -webkit-border-radius: 6px;
+   -moz-border-radius: 6px;
+   border-radius: 6px;
+   padding: 5px 30px 5px 30px;
+}
+
+#thermoFooter
+{
+   clear: both;
+   display: none;
+}
+
+.donationInfo
+{
+  margin-top: 2em;
+}
+
+.donationInfo span
+{
+    color: rgb(57,201,173);
+    font-size: 14pt;
+    font-weight: bold;
+}
