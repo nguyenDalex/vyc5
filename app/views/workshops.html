@@ -1,0 +1,13 @@
+<div class="container content" ng-controller="WorkshopsCtrl">
+	<div class="row">
+		<table class="table">
+			<tr ng-repeat="row in workshops">
+				<th ng-if="row.acf_fc_layout == 'series_title'" colspan="4">{{row.series_title}}<br>{{row.small_description}}</th>
+				<td ng-if="row.acf_fc_layout == 'session'">{{row.day}}</td>
+				<td ng-if="row.acf_fc_layout == 'session'">{{row.number}}</td>
+				<td ng-if="row.acf_fc_layout == 'session'">{{row.title}}</td>
+				<td ng-if="row.acf_fc_layout == 'session'">{{row.speaker}}</td>
+			</tr>
+		</table>
+	</div>
+</div>

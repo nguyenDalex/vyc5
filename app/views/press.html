@@ -1,4 +1,4 @@
-<div class="container content">
+<div class="container content" ng-controller="PressCtrl">
 	<div class="row">
 		<div class="col-md-12 margin-bottom-30">
 			<div class="headline margin-bottom-40"><h2>Color Scheme</h2></div>
@@ -36,7 +36,15 @@
 			<div class="headline">
 				<h2>Download Assets</h2>
 			</div>
-			<a href="/assets/assets.zip"><button class="btn-u btn-u-red" type="button"><i class="fa fa-download"></i> Download Assets</button></a>
+			<a ng-href="{{press_kit_url}}"><button class="btn-u btn-u-red" type="button"><i class="fa fa-download"></i> Download Assets</button></a>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<div class="headline">
+				<h2>View VYC Gallery</h2>
+			</div>
+			<a href="http://1drv.ms/11MVNER"><button class="btn-u btn-u-red" type="button"><i class="fa fa-download"></i> View VYC Gallery</button></a>
 		</div>
 	</div>
 	<div class="row">

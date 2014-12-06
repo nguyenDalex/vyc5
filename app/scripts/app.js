@@ -1,5 +1,6 @@
 'use strict';
 
+
 /**
  * @ngdoc overview
  * @name vyc5AngularApp
@@ -54,6 +55,10 @@ angular
       .when('/viet', {
         templateUrl: 'views/viet.html',
         controller: 'VietCtrl'
+      })
+      .when('/workshops', {
+        templateUrl: 'views/workshops.html',
+        controller: 'WorkshopsCtrl'
       })
       .otherwise({
         redirectTo: '/'
