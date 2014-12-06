@@ -1,5 +1,4 @@
 'use strict';
-/*global $:false */
 
 /**
  * @ngdoc function
@@ -15,6 +14,4 @@ angular.module('vyc5AngularApp')
       'AngularJS',
       'Karma'
     ];
-
-    fundraising.init();
   });
