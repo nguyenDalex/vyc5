@@ -18,5 +18,5 @@ angular.module('vyc5AngularApp')
     {
     	'title':'Overview',
     	'link':'/'
-    }]
+    }];
   });
