@@ -14,4 +14,9 @@ angular.module('vyc5AngularApp')
       'AngularJS',
       'Karma'
     ];
+    $scope.menu = [
+    {
+    	'title':'Overview',
+    	'link':'/'
+    }]
   });
