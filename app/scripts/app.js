@@ -64,6 +64,10 @@ angular
         templateUrl: 'views/gallery.html',
         controller: 'GalleryCtrl'
       })
+      .when('/group', {
+        templateUrl: 'views/group.html',
+        controller: 'GroupCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
