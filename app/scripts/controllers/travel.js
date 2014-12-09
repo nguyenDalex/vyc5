@@ -10,15 +10,18 @@
  * Controller of the vyc5AngularApp
  */
 angular.module('vyc5AngularApp')
-  .controller('TravelCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
-    $('.travel_slider').iosSlider({
-    	desktopClickDrag: true,
-    	snapToChildren: true,
-    	infiniteSlider: true,
-    });
-  });
+	.controller('TravelCtrl', function ($scope) {
+		$scope.awesomeThings = [
+			'HTML5 Boilerplate',
+			'AngularJS',
+			'Karma'
+		];
+		$('.travel_slider').iosSlider({
+			desktopClickDrag: true,
+			snapToChildren: true,
+			infiniteSlider: true,
+			autoSlide:true,
+			autoSlideTimer: 2000
+
+		});
+	});
