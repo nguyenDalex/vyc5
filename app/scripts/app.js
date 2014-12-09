@@ -60,6 +60,10 @@ angular
         templateUrl: 'views/workshops.html',
         controller: 'WorkshopsCtrl'
       })
+      .when('/gallery', {
+        templateUrl: 'views/gallery.html',
+        controller: 'GalleryCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
