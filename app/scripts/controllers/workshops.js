@@ -20,11 +20,10 @@ angular.module('vyc5AngularApp')
 		})
 			.success(function(data) {
 					$scope.workshops = data.page.custom_fields.workshops;
-					console.log($scope.workshops);
 					
 			})
 			.error(function() {
 					console.log('Failed to get workshop data');
 
-			});
+		});
 	});
