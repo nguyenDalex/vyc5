@@ -22,6 +22,7 @@
 		<link rel="stylesheet" href="styles/color.css">
 		<link rel="stylesheet" href="styles/home.css">
 		<link rel="stylesheet" href="styles/team.css">
+		<link rel="stylesheet" href="styles/termo.css">
 		<!-- endbuild -->
 	</head>
 	<body ng-app="vyc5AngularApp">
@@ -54,7 +55,7 @@
 			<!-- End Topbar -->
 			
 			<!-- Navbar -->
-			<div class="navbar navbar-default" role="navigation" ng-style="{'background-image':'url(/images/main/web_background_2.jpg)','background-repeat':'no-repeat', 'background-size':'auto 150px'}">
+			<div class="navbar navbar-default" role="navigation" ng-style="{'background-image':'url(/images/main/vyc5_right.png), url(/images/main/vyc5_left.png)','background-position':'top right, top left', 'background-repeat':'no-repeat', 'background-size':'auto 150px'}">
 				<div class="container" ng-style="{height:'150px'}">
 					<!-- Brand and toggle get grouped for better mobile display -->
 					<div class="navbar-header">
@@ -87,10 +88,15 @@
 									<li><a href="/#/guidelines">Guidelines</a></li>
 								</ul>
 							</li>
-							<li>
-								<a href="/#/experience">
-									The Experience
+							<li class="dropdown">
+								<a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
+									Experience
 								</a>
+								<ul class="dropdown-menu">
+									<li><a href="/#/experience">Experience</a></li>
+									<li><a href="/#/workshops">Workshops</a></li>
+									<li><a href="/#/gallery">Gallery</a></li>
+								</ul>
 							</li>
 							<li class="dropdown">
 								<a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
@@ -98,7 +104,8 @@
 								</a>
 								<ul class="dropdown-menu">
 									<li><a href="/#/team">Team</a></li>
-									<li><a href="/#/press">Press Kit</a></li>
+									<li><a href="/#/press">Promotional Kit</a></li>
+									<li><a href="/assets/BioCardinalVanThuan.pdf">History</a></li>
 									<!-- <li><a href="/#/volunteer">Volunteer</a></li> -->
 								</ul>
 							</li>
@@ -109,7 +116,7 @@
 							</li>
 							<li>
 								<a href="/#/viet">
-									Vietnamese Ver.
+									Tieng Viet
 								</a>
 							</li>
 						</ul>
@@ -137,8 +144,15 @@
 			<div ng-view=""></div>
 
 			<div class="footer">
-				<div class="col-md-12">
-					VYC5 - Vietnamese Youth Convention © Copyright All Rights Reserved. 2014
+				<div class="container">
+					<div class="row">
+						<div class="col-md-9">
+							VYC5 - Vietnamese Youth Convention © Copyright All Rights Reserved. 2014
+						</div>
+						<div class="col-md-1"><img style="height:100px;" src="/assets/VYC5_logo2.png" alt=""></div>
+						<div class="col-md-2"><img width="100
+						" src="/assets/vyc_logo.png" alt=""></div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -173,6 +187,7 @@
 		<script src="bower_components/angular-animate/angular-animate.js"></script>
 		<script src="bower_components/angular-touch/angular-touch.js"></script>
 		<script src="bower_components/angular-route/angular-route.js"></script>
+		<script src="bower_components/iosslider/_src/jquery.iosslider.min.js"></script>
 		<!-- endbower -->
 		<!-- endbuild -->
 
@@ -187,6 +202,8 @@
 <script src="scripts/controllers/team.js"></script>
 <script src="scripts/controllers/press.js"></script>
 <script src="scripts/controllers/viet.js"></script>
+<script src="scripts/controllers/workshops.js"></script>
+<script src="scripts/controllers/gallery.js"></script>
 				<!-- endbuild -->
 </body>
 </html>

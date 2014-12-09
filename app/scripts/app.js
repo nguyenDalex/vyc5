@@ -1,5 +1,6 @@
 'use strict';
 
+
 /**
  * @ngdoc overview
  * @name vyc5AngularApp
@@ -55,9 +56,19 @@ angular
         templateUrl: 'views/viet.html',
         controller: 'VietCtrl'
       })
+      .when('/workshops', {
+        templateUrl: 'views/workshops.html',
+        controller: 'WorkshopsCtrl'
+      })
+      .when('/gallery', {
+        templateUrl: 'views/gallery.html',
+        controller: 'GalleryCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
       // use the HTML5 History API
     $locationProvider.html5Mode(false);
   });
+
+

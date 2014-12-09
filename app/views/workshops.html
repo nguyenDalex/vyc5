@@ -1,0 +1,16 @@
+<div class="container content" ng-controller="WorkshopsCtrl">
+	<div class="headline">
+				<h2>Workshops</h2>
+			</div>
+	<div class="row">
+		<table class="table table-striped">
+			<tr ng-repeat="row in workshops">
+				<th ng-if="row.acf_fc_layout == 'series_title'" colspan="4"><h3>{{row.series_title}}</h3><span style="font-weight: 400;" ng-bind-html="row.small_description"></span></th>
+				<td ng-if="row.acf_fc_layout == 'session'" ng-bind-html="row.day"></td>
+				<td ng-if="row.acf_fc_layout == 'session'" class="animate-if">{{row.number}}</td>
+				<td ng-if="row.acf_fc_layout == 'session'">{{row.title}}</td>
+				<td ng-if="row.acf_fc_layout == 'session'">{{row.speaker}}</td>
+			</tr>
+		</table>
+	</div>
+</div>

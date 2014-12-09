@@ -1,5 +1,7 @@
 'use strict';
 
+/*global $:false */
+
 /**
  * @ngdoc function
  * @name vyc5AngularApp.controller:TravelCtrl
@@ -14,4 +16,9 @@ angular.module('vyc5AngularApp')
       'AngularJS',
       'Karma'
     ];
+    $('.travel_slider').iosSlider({
+    	desktopClickDrag: true,
+    	snapToChildren: true,
+    	infiniteSlider: true,
+    });
   });
