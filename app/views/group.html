@@ -2,30 +2,12 @@
     	<div class="row">
             <!--Left Sidebar-->
             <div class="col-md-3 md-margin-bottom-40">
-                <img class="img-responsive profile-img margin-bottom-20" src="assets/img/team/5.jpg" alt="">
+                <img class="img-responsive profile-img margin-bottom-20" src="{{group.group_image.sizes.medium}}" alt="">
 
                 <ul class="list-group sidebar-nav-v1 margin-bottom-40" id="sidebar-nav-1">
-                    <li class="list-group-item active">
-                        <a href="profile.html"><i class="fa fa-bar-chart-o"></i> Overall</a>
+                    <li class="list-group-item" ng-repeat="page in group.pages">
+                        <a href="profile.html"><i class="fa" ng-class="fa_icon(page.title)"></i> {{page.title}}</a>
                     </li>
-                    <li class="list-group-item">
-                        <a href="profile_me.html"><i class="fa fa-user"></i> Profile</a>
-                    </li>
-                    <li class="list-group-item">
-                        <a href="profile_users.html"><i class="fa fa-group"></i> Users</a>
-                    </li>                                        
-                    <li class="list-group-item">
-                        <a href="profile_projects.html"><i class="fa fa-cubes"></i> My Projects</a>
-                    </li>
-                    <li class="list-group-item">
-                        <a href="profile_comments.html"><i class="fa fa-comments"></i> Comments</a>
-                    </li>                                        
-                    <li class="list-group-item">
-                        <a href="profile_history.html"><i class="fa fa-history"></i> History</a>
-                    </li>                                       
-                    <li class="list-group-item">
-                        <a href="profile_settings.html"><i class="fa fa-cog"></i> Settings</a>
-                    </li> 
                 </ul>   
 
                 <div class="panel-heading-v2 overflow-h">
