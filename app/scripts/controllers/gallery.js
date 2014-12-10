@@ -14,17 +14,24 @@ angular.module('vyc5AngularApp')
       'AngularJS',
       'Karma'
     ];
-$http({
+	$http({
 	method: 'GET',
 	url: 'http://blog.vyc5.org/api/get_page/?id=92&custom_fields=*',
 	})
-		.success(function(data) {
-				$scope.vyc4gallery = data.page.custom_fields.gallery;
-				console.log($scope.vyc4gallery);
-				
-		})
-		.error(function() {
-				console.log('Failed to get workshop data');
+	.success(function(data) {
+			$scope.vyc4gallery = data.page.custom_fields.gallery;
+			console.log($scope.vyc4gallery);
+			
+	})
+	.error(function() {
+			console.log('Failed to get workshop data');
 
-		});
+	});
+	$scope.fa_icon = function(val) {
+		if(val === 'Overview') {
+			return 'fa-bar-chart-o';
+		} else {
+			return 'fa-user';
+		}
+	};
   });
