@@ -11,4 +11,4 @@ If you want to get involved just clone this repo. If you have not used github be
 4. Then run 'grunt build' and if the bower_components folder hasn't been build yet run 'bower install'
 5. Now to run a local server do 'grunt serve:app' to open up the /app application
 
-When you want to contribute your changes do a git pull.
+When you want to contribute your changes do a git pull request.
