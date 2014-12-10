@@ -1,5 +1,7 @@
 'use strict';
-
+// created this variable to by pass jslint
+// fundraising lib is defined in sponsor.js
+var fundraising;
 /**
  * @ngdoc function
  * @name vyc5AngularApp.controller:MainCtrl
@@ -27,4 +29,6 @@ angular.module('vyc5AngularApp')
                                 console.log('Failed to get recent posts');
 
                         });
+
+                fundraising.init();
         });
