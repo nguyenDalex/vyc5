@@ -1,4 +1,4 @@
-<div class="container content">
+<div class="container content" ng-controller="ExperienceCtrl">
 	<div class="row">
 		<div class="col-md-6">
 			<h1>Schedule</h1>
@@ -124,35 +124,12 @@
 			</table>
 		</div>
 		<div class="col-md-6">
-		<div class="headline margin-bottom-40"><h2>Past VYC Reflections</h2></div>
-			<h4>By Daniel Tuan Anh Vu</h4>
+			<div class="headline margin-bottom-40"><h2>Past VYC Reflections</h2></div>
 
-<p><br />
-</p>
-
-<p>Besides the convention, our group that went down there first 2 days before VYC would start headed to Little Saigon. We were not really bored because there were other places to go to like the beach where we splashed around in the water or rode the surf, Disneyland where we spent the entire day there going on rides living like a kid again, and most of all; VYC itself. VYC lasted for 3 days filled with fun and excitement as we all attended Adoration, Entertainment, the Talent Show, and workshops offered there. In Cha Thong’s workshop Finding Mr/Mrs.Right; I learned that if I just wanted a girl that has a personality just like me, it’s only a mirror image of me. I also learned the faith in the Vietnamese Catholic Youth is strong in Frere Phong’s Jesus Freaks.</p>
-
-<p><br />
-</p>
-
-<p>The talent show was one of the most enjoyable things I’ve ever enjoyed in VYC. Besides the skilled piano players and break dancers, I also enjoyed our skit (the Dating Game) that I participated in portraying Joseph the contestant. A hilarious skit, we won the talent show thanks to it. Our group (VYC Seattle) was so loud that later on after VYC ended, I ended up losing my voice as a result. When VYC ended, it wasn’t over for the group I was in yet.</p>
-
-<p><br />
-</p>
-
-<p>After settling in a retreat in Rosemead, we headed back to Orange County to attend a barbecue at a VCSA (Vietnamese Catholic Students Association?) members house. We played in their pool, socialized with other VYC participants there, and watched ourselves on TV into the night. I met more friends there despite the fact that I lost my voice that day. Heading home the next day, me, my brothers, and a friend stopped by Hollywood to browse around before departing California. What I learned and brought home with me from California was new enthusiasm for my faith, my hometown of Seattle, and group. I just wish that it lasted longer and hopefully in California again.</p>
-
-
-<h4>Jeanne Le</h4>
-
-<p>For me, it was the first time for me to attend a convention of any kind, much less a religious one. At first I didn't know what to expect. All I knew about conventions in general was that there were workshops to attend and that people were free to choose which one they wanted to go to. I didn't expect for everyone from their different communities/organizations to come together like we did at VYC3. I attended the event with 4 of my sisters, so that was a good bonding experience. I learned a lot about my faith and how to not be afraid to truly believe in it. The times of laughter and joy, and of silence and contemplation are times I won't want to forget down the road. Thanks VYC3 for the experience!</p>
-
-
-<h4>Lily Tran</h4>
-
-<p>
-	When I first arrived at VYCIII I was scared because I did'nt know alot of people.The first day there I did'nt really do the cheers or anything like that.I also wanted to go home I was home sick. The secound day was a little better because I started joining in and I was having fun.I also meet some nice people.When I was going to Disney land on Monday I told my mom "It's too quiet" I had a really great time.Thank you for everything.
-</p>
+			<div ng-repeat="reflection in experience.reflections">
+				<h4 ng-bind-html="reflection.author"></h4>
+				<div ng-bind-html="reflection.content"></div>
+			</div>
 		</div>
 	</div>
 	<div class="row">
@@ -160,10 +137,7 @@
 			<div class="headline">
 				<h2>Theme - In Christ Alone</h2>
 			</div>
-			<p>Living in today's society as a young adult can be a challenging one. With the balance of going to school, working, maintaining healthy relationships with those around you, the list goes on and on; somewhere along the line you tend to break down. There are people that may either break down because life is too stressful, or it may be that their life isn't going in the direction that they intend it to be. Another possibility could be that a person could be so involved but deep down they have this sense of loneliness and despair. In moments like these, many of us tend to turn to those material goods to try and replace these feelings. Whether it is drugs, alcohol, addiction to pornography, hanging with the wrong group of friends, these feelings of satisfaction or only temporary. We may think that these things will make us happy and fill all those empty feelings that we have inside. But honestly, at the end of the day you'll feel that empty feeling inside you once again, and there are instances where that feeling might be even worse than the first time.</p>
-			<p>
-			We are so blinded with everything that society has taught us that we don't even see what is in front of us. Instead of turning towards those things that can only provide temporary satisfaction, why not turn to the One that can fill that void in your life? And not just turn to him only when you need him, but realize that all you need is Christ. The theme of In Christ Alone sheds light and emphasizes how we need to turn away from sin and come home to God. n Christ Alone reassures that whatever it is that is making you feel empty, lonely or that void Christ will be the one that can mend those problems. At VYC 5 you will learn that Through Him, With Him and In Him there is nothing better than to bring all your troubles and worries with you and offer it up to the Lord so that In Christ Alone you will become renewed.
-			</p>
+			<div ng-bind-html="experience.theme_description"></div>
 		</div>
 	</div>
 </div>

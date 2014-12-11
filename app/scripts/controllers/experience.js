@@ -8,7 +8,7 @@
  * Controller of the vyc5AngularApp
  */
 angular.module('vyc5AngularApp')
-  .controller('ExperienceCtrl', function ($scope) {
+  .controller('ExperienceCtrl', function ($scope, $http) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
