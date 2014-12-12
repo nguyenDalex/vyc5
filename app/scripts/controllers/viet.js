@@ -14,4 +14,4 @@ angular.module('vyc5AngularApp')
       'AngularJS',
       'Karma'
     ];
-  });
+});
