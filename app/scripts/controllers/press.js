@@ -17,11 +17,11 @@ angular.module('vyc5AngularApp')
 	];
 	$http({
 		method: 'GET',
-		url: 'http://blog.vyc5.org/api/get_page/?id=52',
+		url: 'http://blog.vyc5.org/api/get_page/?id=52&custom_fields=*',
 		})
 			.success(function(data) {
 					$scope.press = data.page.custom_fields;
-					$scope.press_kit_url = data.page.attachments[0].url;
+					$scope.press_kit_url = data.page.custom_fields.promotional_kit.url;
 					
 			})
 			.error(function() {
