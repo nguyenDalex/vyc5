@@ -126,9 +126,11 @@
 		<div class="col-md-6">
 			<div class="headline margin-bottom-40"><h2>Past VYC Reflections</h2></div>
 
-			<div ng-repeat="reflection in experience.reflections">
-				<h4 ng-bind-html="reflection.author"></h4>
-				<div ng-bind-html="reflection.content"></div>
+			<div style="padding-left: 40px;" ng-repeat="reflection in experience.reflections">
+				<blockquote class="blockquote-reverse">
+				<p class="text-justify" ng-bind-html="reflection.content"></p>
+				<footer ng-bind-html="reflection.author"></footer>
+				</blockquote>
 			</div>
 		</div>
 	</div>
@@ -141,3 +143,40 @@
 		</div>
 	</div>
 </div>
+
+<style type="text/css">
+blockquote {
+
+	font-size: 18px;
+	width: 500px;
+	margin: 0.25em 0;
+	padding: 0.35em 40px;
+	line-height: 1.45;
+	position: relative;
+	color: #383838;
+}
+
+blockquote:before {
+	font-family: Georgia, serif;
+	display: block;
+	padding-left: 10px;
+	content: "\201C";
+	font-size: 80px;
+	position: absolute;
+	left: -50px;
+	top: -20px;
+	color: #7a7a7a;
+}
+
+blockquote cite {
+	color: #999999;
+	font-size: 14px;
+	display: block;
+	margin-top: 5px;
+}
+ 
+blockquote cite:before {
+	font-family: Georgia, serif;
+	content: "\2014 \2009";
+}
+</style>
